@@ -1,0 +1,50 @@
+msgid "DDNSTOX"
+msgstr "DDNSTOX"
+
+msgid "DDNSTO is a stable, fast, and user-friendly intranet penetration tool."
+msgstr "DDNSTO 是一款稳定、快速、简单易用的内网穿透工具。"
+
+msgid "RUNNING"
+msgstr "运行中"
+
+msgid "NOT RUNNING"
+msgstr "未运行"
+
+msgid "Collecting data..."
+msgstr "收集数据..."
+
+msgid "Basic Setting"
+msgstr "基本设置"
+
+msgid "Enabled"
+msgstr "启用"
+
+msgid "Device Name"
+msgstr "设备名称"
+
+msgid "Device name should contain only alphanumeric characters (maximum 20 characters)"
+msgstr "设备名称请使用英文字符或数字（最长 20 个字符）"
+
+msgid "Token"
+msgstr "用户 Token"
+
+msgid "Please enter a valid Token (Apply at the <a href=\"https://web.ddnsto.com/app\" target=\"_blank\">DDNSTO Console</a>)."
+msgstr "请填写正确的 Token（前往 <a href=\"https://web.ddnsto.com/app\" target=\"_blank\">DDNSTO 控制台</a> 申请）"
+
+msgid "Server Status"
+msgstr "服务状态"
+
+msgid "Core Version"
+msgstr "核心版本"
+
+msgid "Device ID"
+msgstr "设备 ID"
+
+msgid "Device Name"
+msgstr "设备名称"
+
+msgid "Console"
+msgstr "控制台"
+
+msgid "DDNSTO Console"
+msgstr "DDNSTO 控制台"

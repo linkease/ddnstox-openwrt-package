@@ -1,0 +1,68 @@
+<div class="cbi-section">
+	<h3>
+		<%:Server Status%>
+	</h3>
+
+	<div class="cbi-value">
+		<label class="cbi-value-title">
+			<%:Server Status%>
+		</label>
+		<div class="cbi-value-field" id="ddnsto-status">
+			<em>
+				<%:Collecting data...%>
+			</em>
+		</div>
+	</div>
+
+	<div class="cbi-value">
+		<label class="cbi-value-title">
+			<%:Core Version%>
+		</label>
+		<div class="cbi-value-field" id="ddnsto-version">
+			<em>
+				<%:Collecting data...%>
+			</em>
+		</div>
+	</div>
+
+	<div class="cbi-value">
+		<label class="cbi-value-title">
+			<%:Device ID%>
+		</label>
+		<div class="cbi-value-field" id="ddnsto-deviceid">-</div>
+	</div>
+
+	<div class="cbi-value">
+		<label class="cbi-value-title">
+			<%:Device Name%>
+		</label>
+		<div class="cbi-value-field" id="ddnsto-devicename">-</div>
+	</div>
+
+	<div class="cbi-value">
+		<label class="cbi-value-title">
+			<%:Console%>
+		</label>
+		<div class="cbi-value-field">
+			<input class="cbi-button cbi-button-reload" type="button" value="<%:DDNSTO Console%>"
+				onclick="window.open('https://web.ddnsto.com/app', '_blank')" />
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	//<![CDATA[
+	XHR.poll(5, '<%=url("admin/services/ddnstox/status")%>', null,
+		function (x, st) {
+			if (!st) return;
+
+			document.getElementById("ddnsto-status").innerHTML = st.running
+				? '<span style="color:green"><%:RUNNING%></span>'
+				: '<span style="color:red"><%:NOT RUNNING%></span>';
+
+			document.getElementById("ddnsto-version").textContent = st.version || "-";
+			document.getElementById("ddnsto-deviceid").textContent = st.device_id || "-";
+			document.getElementById("ddnsto-devicename").textContent = st.device_name || "-";
+		});
+	//]]>
+</script>
