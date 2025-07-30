@@ -27,7 +27,7 @@ if [ -x "/usr/bin/apk" ]; then
 elif command -v opkg >/dev/null 2>&1; then
     PKG_MANAGER="opkg"
     PKG_OPT="install --force-downgrade"
-    SDK="openwrt-24.10"
+    SDK="openwrt-22.03"
 else
     msg_red "No supported package manager found."
     exit 1

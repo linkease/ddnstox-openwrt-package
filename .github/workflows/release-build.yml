@@ -17,7 +17,7 @@ jobs:
           - arm_cortex-a9
           - x86_64
         sdk:
-          - openwrt-24.10
+          - openwrt-22.03
           - SNAPSHOT
 
     steps:
