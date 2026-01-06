@@ -19,6 +19,7 @@ jobs:
         sdk:
           - openwrt-24.10
           - SNAPSHOT
+          - openwrt-22.03
 
     steps:
       - uses: actions/checkout@v4
