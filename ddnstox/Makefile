@@ -7,12 +7,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ddnstox
-PKG_VERSION:=1.0.0
+PKG_VERSION:=4.0.0
 PKG_RELEASE=1
 
 PKG_SOURCE:=ddnsto-custom-binary-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://fw0.koolcenter.com/binary/ddnsto/op_custom
-PKG_HASH:=2ac45c49c65bc39290b5cdeb4f27a92d7e1ab15140e0b89278b77b55437cfdcb
+PKG_HASH:=fb15d35677ab2e30f25d8eb8e8380daaf40d72b178d39751510ac0d39d60d027
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/ddnsto-custom-binary-$(PKG_VERSION)
 
