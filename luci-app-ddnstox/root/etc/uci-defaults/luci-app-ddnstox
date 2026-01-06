@@ -9,5 +9,7 @@ uci -q batch <<-EOF >/dev/null
 EOF
 }
 
+/etc/init.d/ddnstox enable
+
 rm -rf /tmp/luci-*
 exit 0
