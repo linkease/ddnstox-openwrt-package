@@ -14,11 +14,8 @@ jobs:
       matrix:
         arch:
           - aarch64_generic
-          - arm_cortex-a9
           - x86_64
         sdk:
-          - openwrt-24.10
-          - SNAPSHOT
           - openwrt-22.03
 
     steps:
